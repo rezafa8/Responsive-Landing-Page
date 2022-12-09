@@ -1,0 +1,291 @@
+/* General Styla */
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Inter", sans-serif;
+  line-height: 1;
+  font-weight: 400;
+  color: #555;
+  overflow-x: hidden;
+  max-width: 144rem;
+  margin: 10rem;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+/* Black Screen Styling */
+.overlay {
+  position: fixed;
+  left: 0;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  z-index: 1;
+  background: rgba(0, 0, 0, 0.5);
+}
+
+/* Heading-styling */
+.heading-primary {
+  display: inline-block;
+  font-size: 7.2rem;
+  line-height: 1.1;
+  font-weight: 800;
+  margin-top: 2.4rem;
+  margin-bottom: 0;
+  margin-right: 2.4rem;
+  color: hsl(240, 100%, 5%);
+}
+
+.heading-secondary {
+  margin-top: 3.2rem;
+  margin-bottom: 0;
+  font-size: 3.2rem;
+  color: hsl(35, 77%, 62%);
+}
+
+.heading-tertiary {
+  font-size: 2.2rem;
+  line-height: 1.5;
+  margin-bottom: 2.4rem;
+  color: hsl(36, 100%, 99%);
+  font-weight: 700;
+}
+
+/* Header and Navigation Styling */
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 3.2rem;
+}
+
+.main-nav-list {
+  list-style: none;
+  display: flex;
+  gap: 3.2rem;
+  align-items: center;
+}
+
+.main-nav-link a:link,
+.main-nav-link a:visited {
+  display: inline-block;
+  text-decoration: none;
+  color: hsl(236, 13%, 42%);
+  font-weight: 500;
+  font-size: 1.8rem;
+  transition: all 0.3s;
+}
+
+.main-nav-link a:hover,
+.main-nav-link a:active {
+  color: hsl(5, 85%, 63%);
+}
+
+.nav-open .open-menu {
+  display: none;
+}
+
+.close-menu {
+  display: none;
+}
+
+/* Hero Section Styling */
+
+.btn,
+.btn:link,
+.btn:visited {
+  display: inline-block;
+  padding: 1.6rem 3.2rem;
+  font-weight: 600;
+  text-decoration: none;
+  font-size: 1.6rem;
+  letter-spacing: 4.8px;
+  transition: all 0.3s;
+
+  border: none;
+  cursor: pointer;
+  font-family: inherit;
+}
+
+.btn--full:link,
+.btn--full:visited {
+  background-color: hsl(5, 85%, 63%);
+  color: hsl(36, 100%, 99%);
+}
+
+.btn--full:hover,
+.btn--full:active {
+  background-color: hsl(240, 100%, 5%);
+  color: hsl(36, 100%, 99%);
+}
+
+.btn-mobile-nav {
+  display: none;
+  border: none;
+  background: none;
+  cursor: pointer;
+}
+.link:link,
+.link:visited {
+  display: inline-block;
+  text-decoration: none;
+  color: hsl(36, 100%, 99%);
+  transition: all 0.3s;
+}
+
+.link:hover,
+.link:active {
+  color: hsl(35, 77%, 62%);
+}
+.grid--2--cols {
+  display: grid;
+  grid-template-columns: 2.1fr 0.9fr;
+}
+
+.hero-section {
+  gap: 3.2rem;
+  padding-bottom: 0;
+  margin-bottom: 6.4rem;
+}
+
+.hero-img {
+  width: 100%;
+}
+
+.img-2 {
+  display: none;
+}
+
+.hero {
+  padding-bottom: 0;
+}
+
+.hero-text-box {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+
+.hero-text {
+  margin-left: 3.2rem;
+}
+
+.text-hero {
+  font-size: 1.8rem;
+  margin-right: 1.2rem;
+  margin-top: 3.2rem;
+  margin-bottom: 3.2rem;
+  line-height: 1.6;
+  letter-spacing: 0.5px;
+}
+
+/* Sidebar Styling */
+
+.sidebar {
+  display: grid;
+  grid-template-rows: 0.25fr 1.75fr;
+  border: 1px solid whitesmoke;
+  padding-left: 1.6rem;
+  padding-right: 1.6rem;
+  padding-bottom: 0;
+  background-color: hsl(240, 100%, 5%);
+}
+
+.sidebar-text {
+  border-bottom: 1px solid #eee;
+  color: hsl(233, 8%, 79%);
+  font-size: 1.5rem;
+  line-height: 2.4rem;
+
+  padding-bottom: 3.2rem;
+}
+
+.sidebar-text:last-child {
+  /* margin-bottom: 0; */
+  border: none;
+}
+.sidebar-span {
+  font-size: 1.6rem;
+  line-height: 2.4rem;
+}
+
+.sidebar-text-primary {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+}
+
+/* Lower Section Menu Styling */
+
+.menu {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: auto auto auto;
+  gap: 4.8rem;
+}
+
+.menu-content {
+  margin-left: 2.4rem;
+}
+.step-menu {
+  display: grid;
+  grid-template-columns: 0.6fr 1.4fr;
+}
+
+.step-menu:first-child {
+  padding-right: 2rem;
+}
+
+.step-menu:last-child {
+  margin-right: 0;
+  margin-left: 2rem;
+}
+
+.step-number {
+  font-size: 4.8rem;
+  color: hsl(233, 8%, 79%);
+  margin-bottom: 1.8rem;
+}
+
+.heading-quartenary {
+  font-size: 1.8rem;
+  font-weight: 800;
+  color: hsl(240, 100%, 5%);
+  margin-bottom: 1.8rem;
+}
+
+.link-outer:link,
+.link-outer:visited {
+  display: inline-block;
+  text-decoration: none;
+  color: hsl(240, 100%, 5%);
+  transition: all 0.3s;
+}
+
+.link-outer:hover,
+.link-outer:active {
+  color: hsl(5, 85%, 63%);
+}
+
+.step-img {
+  width: 11.3rem;
+}
+
+.step-description {
+  font-size: 1.5rem;
+  line-height: 1.5;
+}
+
+/* Attribution Styling */
+.attribution {
+  font-size: 11px;
+  text-align: center;
+}
+.attribution a {
+  color: hsl(228, 45%, 44%);
+}
